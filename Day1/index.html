@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css"/>
+    <title>Namaste React</title>
+  </head>
+  <body>
+    <div id="root">
+
+      <!-- First way of making sites using plain html coding -->
+      <h1>~~Not Rendered~~</h1>
+      <h1>~~Not Rendered~~</h1>
+      <h1>~~Not Rendered~~</h1>
+      <h1>~~Not Rendered~~</h1>
+      <h1>~~Not Rendered~~</h1>
+
+    </div>
+  </body>
+
+
+  <!-- Second way of Writing using dom Manipulation to Modify create update HTML Elements
+  <script> 
+    const heading =document.createElement("h1");
+    heading.innerHTML = "Namaste Everyone!!";
+    const root= document.getElementById("root");
+    root.appendChild(heading);
+  </script> -->
+
+
+
+  <!-- Third Way is by Injected React's CDN Links and using it -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- <script>
+    const heading =React.createElement("h1",{},"Namaste Everyone Overidden and Rendered!!");
+    at end of the day react element(i.e heading in this case) is nothing but an object.
+    what comes  inside {} bracket? these are used to add attribues inside  place where we write attributes of tags 
+    i.e <div id="root"> ABC </div> => {id:"root",}  here these get inserted
+
+    
+
+    const root= ReactDOM.createRoot(document.getElementById("root"));
+
+    root.render(heading);
+    what render method does is takes element and manipulates the DOM.
+  </script> -->
+  
+  <!-- Another Cool Fact everythong inside root tag gets overidden on calling react element -->
+  <!-- Dont't place React code before CDN links otherwise will not get rendered~~ -->
+
+
+
+<!-- Creating Multiple Elements Inside One Div i.e 2 divs inside div -->
+  <script src="App.js" >
+
+  </script>
+
+
+</html>
